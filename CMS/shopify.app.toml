@@ -1,13 +1,13 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "7932dec7eb51cbfb2b3f78b59f5eceb8"
-application_url = "https://example.com"
+application_url = "https://cms-ecru-theta.vercel.app"
 embedded = true
 name = "CMS"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products,write_metaobjects,write_metaobject_definitions"
+scopes = "write_products,write_inventory,read_locations,write_locations,write_orders,write_draft_orders,write_order_edits,write_customers,write_customer_merge,read_customer_events,read_store_credit_accounts,write_store_credit_account_transactions,write_fulfillments,write_merchant_managed_fulfillment_orders,write_assigned_fulfillment_orders,write_third_party_fulfillment_orders,write_shipping,write_returns,write_discounts,write_price_rules,write_content,write_themes,write_files,write_online_store_pages,write_online_store_navigation,write_legal_policies,write_metaobjects,write_metaobject_definitions,write_markets,write_translations,write_locales,write_publications,read_product_listings,write_product_feeds,write_purchase_options,write_marketing_events,write_gift_cards,write_pixels,write_script_tags,write_cart_transforms,write_delivery_customizations,write_payment_customizations,write_checkout_branding_settings,read_analytics,read_reports"
 
 [product.metafields.app.demo_info]
 type = "single_line_text_field"
@@ -45,8 +45,7 @@ api_version = "2027-01"
   topics = [ "app/scopes_update" ]
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://cms-ecru-theta.vercel.app/api/auth" ]
 
 [build]
-include_config_on_deploy = true
-automatically_update_urls_on_dev = true
+automatically_update_urls_on_dev = false
